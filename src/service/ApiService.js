@@ -77,6 +77,7 @@ export function socialLogin(provider) {
     console.log("frontendUrl = " + frontendUrl);
 
     //소셜 로그인 url로 리다이렉트 (OAuth2 인증 시작)
+    //프론트엔드에서 처리하지않고 백엔드에서 처리하도록 위임하는 구조
     window.location.href =
         API_BASE_URL +
         "/oauth2/authorization/" +
