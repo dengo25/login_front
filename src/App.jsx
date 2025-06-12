@@ -89,8 +89,10 @@ function App() {
     );
 
     let loadingPage = <h1> 로딩중.. </h1>;
-    let content = loadingPage;
+    let content = loadingPage; //기본 화면은 로딩 페이지
 
+
+    //로딩이 끝나면 todoListPage를 보여줌
     if (!loading) {
         content = todoListPage;
     }
